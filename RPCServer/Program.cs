@@ -53,11 +53,11 @@ namespace RPCServer
         }
 
         
-        public static int Calculate(CalculatorRequest calculatorRequest)
+        private static int Calculate(CalculatorRequest calculatorRequest)
         {
             switch(calculatorRequest.Operation)
             {
-                case '+': return new Calculator().Multiply(calculatorRequest.X, calculatorRequest.Y);
+                case '+': return new Calculator().Add(calculatorRequest.X, calculatorRequest.Y);
                 case '/': return new Calculator().Divide(calculatorRequest.X, calculatorRequest.Y);
                 case '*': return new Calculator().Multiply(calculatorRequest.X, calculatorRequest.Y);
                 case '-': return new Calculator().Substract(calculatorRequest.X, calculatorRequest.Y);

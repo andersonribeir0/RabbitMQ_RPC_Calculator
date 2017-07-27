@@ -1,17 +1,14 @@
-﻿using RPCServer.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using RPCServer.Interfaces;
 
 namespace RPCServer
 {
-    class Calculator : ICalculator
+    public class Calculator : ICalculator
     {
         public int Add(int x, int y)
         {
-            return x+y;
+            
+            return x + y; 
+            
         }
 
         public int Divide(int x, int y)
@@ -26,7 +23,8 @@ namespace RPCServer
 
         public int Substract(int x, int y)
         {
-            return x-y;
+            return x - y;
         }
+   
     }
 }
